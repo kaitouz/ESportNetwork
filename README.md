@@ -9,8 +9,9 @@ A web app to connect the gamers
 
 
 ## 0.IDEA
-
-
+GAMACE is a social network website dedicated to video game fans, 
+which allows users to connect with other players, 
+book individual online lessons with professional players, or become a gaming coach.
 
 
 ## Author
