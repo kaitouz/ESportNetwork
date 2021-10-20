@@ -20,7 +20,7 @@ GAMACE : GAME + ACE
 ### High-Level Overview
     *  dự án là gì?
     *  đối tượng mục tiêu là ai
-    *  đáp ứng những nhu cầu nào?
+    *  đáp ứng những nhu cầu nào? 
 ### High-level description of parts
     * liệt kê chi tiết các chức năng (kto i sto smozet delat v sistem) ?
     * kỹ thuật (cách nó được triển khai về mặt kiến trúc)
