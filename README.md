@@ -15,7 +15,7 @@ book individual online lessons with professional players, or become a gaming coa
 
 GAMACE : GAME + ACE
 
-## 1. Analysis of the task and review of another similar web application
+## 1. Analysis of the task and review of other similar web application
 
 ## Сравнительный анализ аналогов
 
