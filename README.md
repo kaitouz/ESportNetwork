@@ -13,6 +13,9 @@ GAMACE is a social network website dedicated to video game fans,
 which allows users to connect with other players, 
 book individual online lessons with professional players, or become a gaming coach.
 
+GAMACE : GAME + ACE
+
+## 1. Analysis of the task and review of analogs
 
 ## Author
 
