@@ -24,7 +24,11 @@ GAMACE : GAME + ACE
 
 ### *High-level description of parts*
 
-* liệt kê chi tiết các chức năng (kto i sto smozet delat v sistem) ?
+* Use:
+  * book individual lessons with coach
+  * Register to be a coach
+* Coach:
+  * create lessons
 * Technical:
   * Frontend:
     * React.js
