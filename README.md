@@ -19,16 +19,17 @@ GAMACE : GAME + ACE
 
 ### *High-Level Overview*
 
-    GAMEACE is a coaching platform dedicated to video game fans. It enables professional players to monetize their talent through coaching và giúp những người mong muốn cải thiện kỹ năng. 
+    GAMEACE is a coaching platform dedicated to video game fans. It enables professional players to monetize their talent through coaching and help those who want to improve their skills. 
 
 
 ### *High-level description of parts*
 
-* Use:
-  * book individual lessons with coach
+* Users:
+  * Book individual lessons with coaches
   * Register to be a coach
-* Coach:
-  * create lessons
+* Coaches:
+  * Create lessons
+
 * Technical:
   * Frontend:
     * React.js
@@ -53,11 +54,11 @@ pedagogical skills or their ability to share their expertise.
 
 | Name                  | bettergamer.com | gamercoach.com | metafy.gg |
 |-----------------------|-----------------|----------------|-----------|
-| Supported Games       | 13              | 10             | 120       |
-| Visual                | 9               | 8              | 9         |
-| How they rate coaches | 8               | 8              | 7         |
-| Chat                  | +               | -              | +         |
-| Community(Blog, news) | +               | -              | -         |
+| Supported Games       | 13                 | 10                | 120       |
+| Visual                | 9/10               | 8/10              | 9/10      |
+| How they rate coaches | 8/10               | 8/10              | 7/10      |
+| Chat                  | +                  | -                 | +         |
+| Community(Blog, news) | +                  | -                 | -         |
 
 
 ### *Conclusion*
