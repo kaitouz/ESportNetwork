@@ -38,11 +38,12 @@ GAMACE : GAME + ACE
     * PostgreSQL
 ### *Description of analogs*
 
-* bettergamer.com
-  * (13 games)
+* gamersensei.com:
+  This is the world's premier esports coaching platform. They belong to corsair (a leader in gaming gear ranging from cases to peripherals and components to streaming equipment) so they have a very large network of trainers who are professionally trained and tested.
 * gamercoach.com
-  *  (10 games)
-  *  To be listed on the GamerCoach platform, 
+  * (10 games)
+  * To be listed on the GamerCoach platform, 
+  * PSG
 all coaches have been evaluated upstream by breeders 
 on very strict criteria such as their technical skills, their 
 pedagogical skills or their ability to share their expertise.
@@ -52,7 +53,7 @@ pedagogical skills or their ability to share their expertise.
     
 ### *Comparative analysis*
 
-| Name                  | bettergamer.com    | gamercoach.com    | metafy.gg |
+| Name                  | gamersensei.com    | gamercoach.com    | metafy.gg |
 |-----------------------|--------------------|-------------------|-----------|
 | Supported Games                            | 13                | 10                | 120       |
 | Visual                                     | 10/10             | 8/10 (in the style of the FIFA game, difficult to approach and get used to for gamers of other games)             | 9/10      |
