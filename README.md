@@ -52,13 +52,15 @@ pedagogical skills or their ability to share their expertise.
     
 ### *Comparative analysis*
 
-| Name                  | bettergamer.com | gamercoach.com | metafy.gg |
-|-----------------------|-----------------|----------------|-----------|
-| Supported Games       | 13                 | 10                | 120       |
-| Visual                | 9/10               | 8/10              | 9/10      |
-| How they rate coaches | 8/10               | 8/10              | 7/10      |
-| Chat                  | +                  | -                 | +         |
-| Community(Blog, news) | +                  | -                 | -         |
+| Name                  | bettergamer.com    | gamercoach.com    | metafy.gg |
+|-----------------------|--------------------|-------------------|-----------|
+| Supported Games                            | 13                | 10                | 120       |
+| Visual                                     | 10/10             | 8/10 (in the style of the FIFA game, difficult to approach and get used to for gamers of other games)             | 9/10      |
+| Classify coaches based on level of expertise   | +                 | -         |+       |
+| Classify coaches based on forte role/champion  | +                 | -         |+       |
+| Reviews of people who have attended the course | +                 | -         |-       |
+| Chat                  | +                  | -                     | +         |
+| Community(Blog, news) | +                  | -                     | -         |
 
 
 ### *Conclusion*
