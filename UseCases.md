@@ -1,13 +1,15 @@
 # Use Cases
 
-## 1. Список акторов
-Список и краткое описание действующих лиц, взаимодействущих с приложением, и краткое указание доступной им функциональности.
-
+## 1. List of users
+* Gamer : register to the system as a customer, choose the courses (based on game, language, skill level, rating,... )
+* Pro player: register to the system as a coach, update profile, propose courses.
 
 ## 2. Диаграмма прецедентов использования
 Оформляем в нотации Use Case Diagram (UML).
 
-## 3.Спецификации прецедентов использования
-Описываем все прецеденты, указывая действующих лиц, предусловия, основной и альтернативные потоки и постусловия.
-
-
+## 3.Use case specifications
+| Use cases              | Brief description                                                 | User                  | Preconditions                        | Main stream                                                                                                                                    | Sub stream                                                                                                                                                                                                                                                   | Result                                                                                                                          |
+|------------------------|-------------------------------------------------------------------|-----------------------|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| Register new account   | Used for gamers to register to use the facilities of the website. | Customer and Coaches. | Gamers want to create a new account. | Gamers decide to register a new account and fill out the corresponding registration form, be sure a indicate last name, first name, user name. | They have incorrectly completed the registration form or the account already exists. The registration request doesn’t generate, the users receive an error message and must either refill the form or cancel the registration, and then finish the use case. | If the use case is successful, a new account is registered in the system, otherwise, the state of the system remains unchanged. |
+| Choose the coach       |                                                                   |                       |                                      |                                                                                                                                                |                                                                                                                                                                                                                                                              |                                                                                                                                 |
+| Database modifications |                                                                   |                       |                                      |                                                                                                                                                |                                                                                                                                                                                                                                                              |                                                                                                                                 |
