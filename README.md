@@ -40,7 +40,7 @@ GAMEACE is a coaching platform dedicated to video game fans. It enables professi
 
 * **_gamersensei.com_**:
   This is the world's premier esports coaching platform. They belong to corsair (a leader in gaming gear ranging from cases to peripherals and components to streaming equipment) so they have a very large network of trainers who are professionally trained and tested.
-* **_gamercoach.co_**m:
+* **_gamercoach.co_**:
   This website is developed by PSG (a football club that is encroaching on its influence in the field of e-sports). Their coach selection process is very rigorous and professional: To be listed on the GamerCoach platform, all coaches have been evaluated upstream by breeders on very strict criteria such as their technical skills, their pedagogical skills or their ability to share their expertise. However, because it focuses mainly on FIFA games, the interface of the website is completely based on the concept of FIFA games, so it is difficult to reach users in other games.
 * **_metafy.gg_**:
   This is a successful startup web project. Because there is no need to go through the rigorous selection tests like the above websites, this website has a large team of coaches, spanning many games. With more than 120 games supported and more than 1000 training pellets.
