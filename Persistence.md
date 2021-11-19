@@ -1,3 +1,6 @@
+
+## 1. List of entities, properties
+
 <table>
 <thead>
   <tr>
@@ -132,5 +135,9 @@
 </tbody>
 </table>
 
-## 2. Use Case Diagram
+## 2. Entity Relationship Diagram
 ![ER](https://github.com/kaitouz/ESportNetwork/blob/main/Image/ER.png)
+
+
+## 3. Database model
+![ER](https://github.com/kaitouz/ESportNetwork/blob/main/Image/db.png)
