@@ -13,3 +13,7 @@
 3. Sign-up Page
 
 ![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/signup.png)
+
+3. User Profile Page
+
+![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/profile.png)
