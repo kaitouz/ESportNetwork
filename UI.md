@@ -28,9 +28,9 @@
 ####1. Guest
 
 <p float="center">
-  <img src="/Image/UI/homepage.png" width="327" />
-  <img src="/Image/UI/login.png" width="327" /> 
-  <img src="/Image/UI/signup.png" width="327" />
+  <img src="/Image/UI/homepage.png" width="330" />
+  <img src="/Image/UI/login.png" width="330" /> 
+  <img src="/Image/UI/signup.png" width="330" />
 </p>
 
 
