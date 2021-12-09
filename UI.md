@@ -51,7 +51,7 @@
 
 ### 3. Actor __*Coach*__
 
-![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/Coach/HomepageCoach.png)
+![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/Coach/HomePageCoach.png)
 
 <p float="center">
   <img src="/Image/UI/Coach/ProfileCoach.png" width="500" /> 
