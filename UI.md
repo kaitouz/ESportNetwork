@@ -1,8 +1,36 @@
 # UI
 
-## Interface Design
+## List of interfaces
 
-1. Home Page
+#### The pages will be available for guest (unregistered users)
++ Home Page
++ Login
++ Registration
+
+#### The pages will be available for actor __*user*__
++ User's profile
++ Edit User's profile
++ Profiles of other users/coaches
++ Search Course
+
+#### The pages will be available for actor __*coach*__
++ Coach's profile
++ Edit Coach's profile
++ Profiles of other users/coaches
++ Management Course
++ Search Course
+
+
+## Interface sketches
+
+1. Guest
+
+
+<p float="left">
+  <img src="/UI/homepage.png" width="100" />
+  <img src="/UI/login.png" width="100" /> 
+  <img src="/UI/signup.png" width="100" />
+</p>
 
 ![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/homepage.png)
 
