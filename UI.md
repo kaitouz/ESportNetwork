@@ -27,9 +27,9 @@
 
 
 <p float="left">
-  <img src="/Image/UI/homepage.png" width="350" />
-  <img src="/Image/UI/login.png" width="350" /> 
-  <img src="/Image/UI/signup.png" width="350" />
+  <img src="/Image/UI/homepage.png" width="320" />
+  <img src="/Image/UI/login.png" width="320" /> 
+  <img src="/Image/UI/signup.png" width="320" />
 </p>
 
 ![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/homepage.png)
