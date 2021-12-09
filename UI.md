@@ -27,7 +27,7 @@
 
 ## Interface sketches
 
-#### 1. Guest
+### 1. Guest
 
 ![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/homepage.png)
 
@@ -37,7 +37,7 @@
 </p>
 
 
-#### 2. Actor __*User*__
+### 2. Actor __*User*__
 
 ![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/User/HomepageUser.png)
 
@@ -49,7 +49,13 @@
 </p>
 
 
-#### 3. Actor __*Coach*__
+### 3. Actor __*Coach*__
 
-![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/signup.png)
+![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/Coach/HomepageCoach.png)
 
+<p float="center">
+  <img src="/Image/UI/Coach/ProfileCoach.png" width="500" /> 
+  <img src="/Image/UI/Coach/EditProfileCoach.png" width="500" />
+  <img src="/Image/UI/Coach/CourseManagement.png" width="500" /> 
+  <img src="/Image/UI/Coach/CourseEdit.png" width="500" />
+</p>
