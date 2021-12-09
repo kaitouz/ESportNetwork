@@ -65,10 +65,10 @@
 
 ### 1. Guest
 
-![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/guest.png)
+![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/diagram/guest.png)
 
 ### 2. Actor __*User*__
-![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/user.png)
+![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/diagram/user.png)
 
 ### 3. Actor __*Coach*__
-![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/coach.png)
+![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/diagram/coach.png)
