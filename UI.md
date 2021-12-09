@@ -8,12 +8,14 @@
 + Registration
 
 #### The pages will be available for actor __*user*__
++ Home Page (as user)
 + User's profile
 + Edit User's profile
 + Profiles of other users/coaches
 + Search Course
 
 #### The pages will be available for actor __*coach*__
++ Home Page (as coach)
 + Coach's profile
 + Edit Coach's profile
 + Profiles of other users/coaches
@@ -23,25 +25,20 @@
 
 ## Interface sketches
 
-1. Guest
+####1. Guest
 
-
-<p float="left">
-  <img src="/Image/UI/homepage.png" width="325" />
-  <img src="/Image/UI/login.png" width="325" /> 
-  <img src="/Image/UI/signup.png" width="325" />
+<p float="center">
+  <img src="/Image/UI/homepage.png" width="327" />
+  <img src="/Image/UI/login.png" width="327" /> 
+  <img src="/Image/UI/signup.png" width="327" />
 </p>
 
-![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/homepage.png)
 
-2. Login Page
+####2. Actor __*User*__
 
 ![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/login.png)
 
-3. Sign-up Page
+####3. Actor __*Coach*__
 
 ![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/signup.png)
 
-3. User Profile Page
-
-![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/profile.png)
