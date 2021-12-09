@@ -59,3 +59,16 @@
   <img src="/Image/UI/Coach/CourseManagement.png" width="500" /> 
   <img src="/Image/UI/Coach/CourseEdit.png" width="500" />
 </p>
+
+
+## Interface diagram
+
+### 1. Guest
+
+![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/guest.png)
+
+### 2. Actor __*User*__
+![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/user.png)
+
+### 3. Actor __*Coach*__
+![UML](https://github.com/kaitouz/ESportNetwork/blob/main/Image/UI/coach.png)
