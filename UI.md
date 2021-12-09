@@ -43,9 +43,13 @@
 
 <p float="center">
   <img src="/Image/UI/User/ProfileUser.png" width="500" /> 
+  <figcaption>User's profile</figcaption>
   <img src="/Image/UI/User/EditProfileUser.png" width="500" />
+  <figcaption>User's profile</figcaption>
   <img src="/Image/UI/User/Search.png" width="500" /> 
+  <figcaption>User's profile</figcaption>
   <img src="/Image/UI/User/CourseInfor.png" width="500" />
+  <figcaption>User's profile</figcaption>
 </p>
 
 
