@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>GAMACE</title>
+    <link rel="shortcut icon" th:href="@{/img/favicon.ico}">
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+
+</head>
+
+<body>
+<!--header!-->
+
+<header class="bg-black">
+    <div class="container" >
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+
+            <a th:href="@{/}" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img th:src="@{/img/ESPortNetwork.svg}" alt="" width="195" height="51">
+            </a>
+
+            <div sec:authorize="!isAuthenticated" class="col-md-3 text-end">
+                <a th:href="@{/doLogin}"  class="btn btn-outline-success btn-lg text-nowrap">LOGIN</a>
+                <a th:href="@{/signup}" class="btn btn-success btn-lg text-nowrap">SIGN UP</a>
+            </div>
+
+            <div sec:authorize="isAuthenticated" class="text-end">
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success text-nowrap dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dashboard
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" th:href="@{/UserPage/}+'root'" autocomplete="off">My page</a></li>
+                        <li sec:authorize="hasAuthority('COACH')"><a class="dropdown-item" th:href="@{/CourseManagement}">Manage courses</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item"  th:href="@{/logout}">Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!--main!-->
+<main>
+    <section class="py-4 text-center container">
+        <div class="px-4 pt-0 my-5 text-center ">
+            <div sec:authorize="!isAuthenticated">
+                <h1 class="display-4 fw-bold">GAMACE</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">WANT TO BE A PRO GAMER ?</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <a th:href="@{/doLogin}">
+                            <img th:src="@{/img/BTN.svg}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div sec:authorize="isAuthenticated">
+                <h1 class="display-4 fw-bold" sec:authentication="name">"name"</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">WANT TO BE A PRO GAMER ?</p>
+
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <a th:href="@{/GetSearchingResult}">
+                            <img th:src="@{/img/BTN.svg}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!--footer-->
+<div class="container fixed-bottom">
+    <footer class="text-muted  d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="text-muted fw-bold">&copy; 2021 GAMACE, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="17" height="28" viewBox="0 0 17 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ng-scope">
+                        <path d="M16.8259 5.93741V0.603516H8.82506V3.27046H6.15811V9.93783H0.824219V15.2717H6.15811V27.273H11.492V15.2717H16.8259V9.93783H11.492V5.93741H16.8259Z" fill="#6C757D"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ng-scope">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.03842 3.5101V0.546875H6.00165H8.96488H18.2408H21.204H23.0277H24.1672H27.1305V3.5101H30.0937V9.43655V14.6736H30.0938V20.6001V26.5265H27.1305V29.4897H24.1673H21.2041H11.9282H8.96492H7.14127H6.0017H3.03847V26.5265H0.0752468V20.6001V15.363H0.0751953V9.43655V3.5101H3.03842ZM4.00165 14.6736H4.0017V20.6001V25.5633H5.4533H8.96492H11.9282H21.2041H26.1673V20.6001V15.363H26.1672V9.43655V4.47333H24.7156H21.204H18.2408H8.96488H4.00165V9.43655V14.6736ZM24.0533 6.80513H21.4013V9.45713H24.0533V6.80513ZM11.0951 11.2069V10.2256H12.0765H13.0578H16.1297H17.1111H17.715H18.0924H19.0737V11.2069H20.0551V13.1696V15.0181H20.0552V16.9808V18.9435H19.0738V19.9248H18.0925H17.1111H14.0392H13.0579H12.4539H12.0765H11.0952V18.9435H10.1139V16.9808V15.1323H10.1138V13.1696V11.2069H11.0951ZM12.4141 15.0181H12.4142V16.9808V17.6245H13.0579H14.0392H17.1111H17.7548V16.9808V15.1323H17.7548V13.1696V12.5259H17.1111H16.1297H13.0578H12.4141V13.1696V15.0181Z" fill="#6C757D"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="27" height="23" viewBox="0 0 27 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ng-scope">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.1755 0.567383H19.2537H5.20879V0.568112H0.974609V22.8792H7.89644V20.5936H19.2537V22.8785H26.1755V20.5936H26.1759V0.567383H26.1755ZM16.5659 7.66068H20.7324V13.7089H16.5659V7.66068ZM5.8804 7.66075H10.047V13.7089H5.8804V7.66075Z" fill="#6C757D"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+
+<!--
+<div class="container fixed-bottom">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="text-muted fw-bold">&copy; 2021 GAMACE, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="17" height="28" viewBox="0 0 17 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ng-scope">
+                        <path d="M16.8259 5.93741V0.603516H8.82506V3.27046H6.15811V9.93783H0.824219V15.2717H6.15811V27.273H11.492V15.2717H16.8259V9.93783H11.492V5.93741H16.8259Z" fill="#6C757D"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ng-scope">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.03842 3.5101V0.546875H6.00165H8.96488H18.2408H21.204H23.0277H24.1672H27.1305V3.5101H30.0937V9.43655V14.6736H30.0938V20.6001V26.5265H27.1305V29.4897H24.1673H21.2041H11.9282H8.96492H7.14127H6.0017H3.03847V26.5265H0.0752468V20.6001V15.363H0.0751953V9.43655V3.5101H3.03842ZM4.00165 14.6736H4.0017V20.6001V25.5633H5.4533H8.96492H11.9282H21.2041H26.1673V20.6001V15.363H26.1672V9.43655V4.47333H24.7156H21.204H18.2408H8.96488H4.00165V9.43655V14.6736ZM24.0533 6.80513H21.4013V9.45713H24.0533V6.80513ZM11.0951 11.2069V10.2256H12.0765H13.0578H16.1297H17.1111H17.715H18.0924H19.0737V11.2069H20.0551V13.1696V15.0181H20.0552V16.9808V18.9435H19.0738V19.9248H18.0925H17.1111H14.0392H13.0579H12.4539H12.0765H11.0952V18.9435H10.1139V16.9808V15.1323H10.1138V13.1696V11.2069H11.0951ZM12.4141 15.0181H12.4142V16.9808V17.6245H13.0579H14.0392H17.1111H17.7548V16.9808V15.1323H17.7548V13.1696V12.5259H17.1111H16.1297H13.0578H12.4141V13.1696V15.0181Z" fill="#6C757D"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="27" height="23" viewBox="0 0 27 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ng-scope">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.1755 0.567383H19.2537H5.20879V0.568112H0.974609V22.8792H7.89644V20.5936H19.2537V22.8785H26.1755V20.5936H26.1759V0.567383H26.1755ZM16.5659 7.66068H20.7324V13.7089H16.5659V7.66068ZM5.8804 7.66075H10.047V13.7089H5.8804V7.66075Z" fill="#6C757D"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+-->
+
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+
+</body>
+</html>

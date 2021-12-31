@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-up Page</title>
+
+    <link rel="shortcut icon" th:href="@{/img/favicon.ico}">
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!--header-->
+
+<header class="bg-black fixed-top">
+    <div class="container" >
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+
+            <a th:href="@{/}" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img th:src="@{/img/ESPortNetwork.svg}" alt="" width="195" height="51">
+            </a>
+
+        </div>
+    </div>
+</header>
+
+<!--main-->
+
+
+<div class="container pt-5" style="max-width: 960px">
+    <div class="container" style="max-width: 960px">
+        <main>
+            <div class="pt-5 pb-3 text-center">
+                <h1 class="pt-3 fs-1 h3 mb-3 fw-bold">SIGN UP FOR <span style="color: #36F35B">GAMACE</span></h1>
+            </div>
+
+            <div class="g-5 container-sm ">
+                <form class="needs-validation" novalidate th:action="@{/PostSignUp}" method="post">
+                    <div class="row g-3">
+                        <div class="pt-3 row justify-content-md-center">
+                            <div class="row col-sm-8">
+                                <label for="Username" class="form-label">Username</label>
+                                <input name="username" type="text" class="form-control" id="username"
+                                       placeholder="username" required>
+                                <div class="invalid-feedback">
+                                    Your username is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-3 row justify-content-md-center">
+                            <div class="row col-sm-8">
+                                <label for="Password" class="form-label">Password</label>
+                                <input name="password" type="password" class="form-control" id="Password"
+                                       placeholder="password" required>
+                                <div class="invalid-feedback">
+                                    Your password is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-3 row justify-content-md-center">
+                            <div class="col-sm-4">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input name="first_name" type="text" class="form-control" id="firstName"
+                                       placeholder="FirstName" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input name="last_name" type="text" class="form-control" id="lastName"
+                                       placeholder="LastName" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-3 row justify-content-md-center">
+                            <div class="row col-sm-8">
+                                <label for="email" class="form-label">Email</label>
+                                <input name="email" type="email" class="form-control" id="email"
+                                       placeholder="name@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-3 row justify-content-md-center">
+                            <div class="row col-sm-8">
+                                <label for="PhoneNumber" class="form-label">Phone Number</label>
+                                <input name="phone_number" type="text" class="form-control" id="PhoneNumber"
+                                       placeholder="+79999999999"
+                                       required>
+                                <div class="invalid-feedback">
+                                    Please enter your Phone Number.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 row justify-content-md-center">
+                            <div class="row col-sm-8 ">
+                                <label for="Role" class="form-label">Role</label>
+                                <select name="role" class="form-control" id="role">
+                                    <option value="USER">User</option>
+                                    <option value="COACH">Coach</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 row justify-content-md-center">
+                            <div class="col-sm-4">
+                                <label class="form-label pb-2" for="game">Game</label>
+                                <select name="game" class="form-select" id="game" aria-label="Floating label select example">
+                                    <option value="lol">League of Legends</option>
+                                    <option value="dota2">DOTA2</option>
+                                    <option value="apex">Apex Legends</option>
+                                    <option value="tft">Teamfight Tactics</option>
+                                    <option value="valorant">Valorant</option>
+                                    <option value="wildrift">Wild Rift</option>
+                                    <option value="csgo">Counter-Strike: Global Offensive</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label class="form-label pb-2" for="language">Language</label>
+                                <select name="language" class="form-select" id="language" aria-label="Floating label select example">
+                                    <option value="de">German</option>
+                                    <option value="en">English</option>
+                                    <option value="es">Spanish</option>
+                                    <option value="fr">French</option>
+                                    <option value="it">Italian</option>
+                                    <option value="ja">Japanese</option>
+                                    <option value="ko">Korean</option>
+                                    <option value="pt">Portuguese</option>
+                                    <option value="ru">Russian</option>
+                                    <option value="th">Thai</option>
+                                    <option value="vi">Vietnamese</option>
+                                    <option value="zh">Chinese</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="pt-4 text-center checkbox mb-3">
+                        <label>
+                            <div><a>Have an account? </a> </a><a th:href="@{/doLogin}" class="text-black fw-bold text-decoration-none" style="color: #36F35B">Sign In</a></div>
+                        </label>
+                    </div>
+
+                    <div class="text-center pt-2">
+                        <button class="w-50 btn btn-lg fw-bold bg-dark align-content-sm-center" style="color: #36F35B" type="submit">SIGN UP</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <br>
+    <br>
+
+</div>
+
+
+<!--footer-->
+<div class="container">
+    <footer class="text-muted  d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="text-muted fw-bold">&copy; 2021 GAMACE, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="17" height="28" viewBox="0 0 17 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ng-scope">
+                        <path d="M16.8259 5.93741V0.603516H8.82506V3.27046H6.15811V9.93783H0.824219V15.2717H6.15811V27.273H11.492V15.2717H16.8259V9.93783H11.492V5.93741H16.8259Z" fill="#6C757D"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ng-scope">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.03842 3.5101V0.546875H6.00165H8.96488H18.2408H21.204H23.0277H24.1672H27.1305V3.5101H30.0937V9.43655V14.6736H30.0938V20.6001V26.5265H27.1305V29.4897H24.1673H21.2041H11.9282H8.96492H7.14127H6.0017H3.03847V26.5265H0.0752468V20.6001V15.363H0.0751953V9.43655V3.5101H3.03842ZM4.00165 14.6736H4.0017V20.6001V25.5633H5.4533H8.96492H11.9282H21.2041H26.1673V20.6001V15.363H26.1672V9.43655V4.47333H24.7156H21.204H18.2408H8.96488H4.00165V9.43655V14.6736ZM24.0533 6.80513H21.4013V9.45713H24.0533V6.80513ZM11.0951 11.2069V10.2256H12.0765H13.0578H16.1297H17.1111H17.715H18.0924H19.0737V11.2069H20.0551V13.1696V15.0181H20.0552V16.9808V18.9435H19.0738V19.9248H18.0925H17.1111H14.0392H13.0579H12.4539H12.0765H11.0952V18.9435H10.1139V16.9808V15.1323H10.1138V13.1696V11.2069H11.0951ZM12.4141 15.0181H12.4142V16.9808V17.6245H13.0579H14.0392H17.1111H17.7548V16.9808V15.1323H17.7548V13.1696V12.5259H17.1111H16.1297H13.0578H12.4141V13.1696V15.0181Z" fill="#6C757D"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="27" height="23" viewBox="0 0 27 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="ng-scope">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.1755 0.567383H19.2537H5.20879V0.568112H0.974609V22.8792H7.89644V20.5936H19.2537V22.8785H26.1755V20.5936H26.1759V0.567383H26.1755ZM16.5659 7.66068H20.7324V13.7089H16.5659V7.66068ZM5.8804 7.66075H10.047V13.7089H5.8804V7.66075Z" fill="#6C757D"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/form-validation.js}"></script>
+</body>
+</html>
