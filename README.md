@@ -32,7 +32,7 @@ GAMEACE is a coaching platform dedicated to video game fans. It enables professi
 
 * Technical:
   * Frontend:
-    * React.js
+    * Boostrap
   * Backend:
     * Spring Boot
     * PostgreSQL
